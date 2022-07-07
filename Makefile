@@ -20,7 +20,7 @@ CFLAGS += -DHAVE_STDINT_H=1
 CFLAGS += -Wall -Wextra -Wno-unused-parameter -Wstrict-prototypes -Wmissing-declarations -Winit-self -Wmissing-format-attribute \
           -Wformat=2 -g -fPIC -D_GNU_SOURCE
 LIBS += -lcurl
-LDFLAGS = -Wall -ljansson -shared
+LDFLAGS += -Wall -ljansson -shared
 
 .PHONY: install clean
 
